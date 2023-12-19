@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macondo</title>
+    <link rel="stylesheet" href="macondo.css">
+</head>
+<body>
+    <!--CASO #1-->
+    <div id="formulario"><!--Este div es para encapsular a la seccion del formulario para luego ocultarla-->
+        <h1>Bienvenido a el aereopuerto El Dorado</h1>
+    <div class="saludo">
+    
+        <label  for=""><h2>Ingresa tu nombre </h2></label>
+        <input type="text"id="nombre" placeholder="Ingrese su primer nombre">
+
+        <label  for=""><h2>Ingrese día</h2></label>
+        <input id="dia" type="text" placeholder="Ingrese el día del viaje"><br>
+        <button onclick="datos()">Enviar</button>
+    </div>
+    </div>
+
+    <div id="pagina" class="display-none"><!--Este div es para encapsular toda la pagina para luego mostrarla-->
+    <div class="cuenta">
+        <h2>cuenta:<h2 class="cantidad" id="saldo">2.500.000</h2></h2>
+    </div>
+
+    <div class="bienvenida">
+        <h1 id="saludar"></h1>
+    </div>
+
+    <div  class="decision1">
+        <h3>Ya que deseas viajar hacia macondo el dia viernes en la noche y quieres algo de comer, selecciona si deseas comer antes de el vuelo o deseas esperar a llegar a Medellín</h3>
+        <div class="botones1">
+            <button onclick="comerYa()" class="b1">Comer Ya</button>
+            <button onclick="ahoraNo()" class="b2">Ahora no</button>
+        </div>
+    </div>
+
+    <div id="esconder" class="display-none"><!--Este div es el selecionador de comidas-->
+        <h2>¿Qué deseas comprar?</h2>
+        <div class="comida1">
+            <a onclick="almohabana()"><img src="../img/almohabana.png" alt="Esto es una almohabana"></a>
+            <h3>almohabana con gaseosa</h3>
+            <h3>15.000</h3> 
+        </div>
+        <div class="comida2">
+            <a onclick="subway()"><img src="../img/subway.png" alt="Esto es un subway"></a>
+            <h3>Subway con gaseosa</h3>
+            <h3>23.000</h3>
+        </div>
+    </div>
+
+    <div id="esconder2" class="display-none"> <!--Este div es si no desea comer-->
+        <h2>Te tocara comprar algo en Medellín</h2>
+    </div>
+    
+    <img id="colico" src="../img/tripas-panza.gif" class="display-none" alt="">
+    <img id="lleno" src="../img/homero.gif" class="display-none" alt="">
+
+    <!--CASO #2-->
+
+    <section id="caso2" class="display-none caso2 seccion">
+        <h1>Antes de tu vuelo a Medellín ocurrio un problema 😨</h1>
+        <button onclick="caso2()">¿Cuál es? 😓</button>
+    </section>  
+<section class="display-none seccion" id="maleta">
+    <div class="problema" id="problema">
+        <h3>La aerolínea tiene el tamaño normal para las maletas de mano, 55 cm (alto) x 40 cm (largo) x 20 cm (ancho) Ingresa los datos de tu maleta para verificar si tiene el tamaño adecuado, y si no lo tiene tendras que modificar tu maleta:</h3>
+        <label for="">Alto:</label>
+        <input id="alto" type="text"> 
+        <label for="">Largo:</label>
+        <input id="largo" type="text">
+        <label for="">Ancho:</label>
+        <input id="ancho" type="text"><br>
+        <button class="b1" onclick="medidasMaletas()">Verificar</button>
+    </div>
+
+    <div class="tabla">
+        <table>
+            <tr class="tr1">
+                <td colspan="2">Medidas permitidas</td>
+                <td>Medidas Nuevas</td>
+            </tr>
+            <tr>
+                <td>Altura</td>
+                <td>55 cm</td>
+                <td id="alto1"></td>
+            </tr>
+            <tr>
+                <td>Largo</td>
+                <td>40 cm</td>
+                <td id="largo1"></td>
+            </tr>
+            <tr>
+                <td>Ancho</td>
+                <td>20 cm</td>
+                <td id="ancho1"></td>
+            </tr>
+        </table>
+    </div>
+    </section>
+
+    <!--CASO #3-->
+
+    <section class="display-none caso3 seccion" id="caso3">
+        <h3>ohh.. ohh.. no tienes wifi y debes asegurar la reserva del hotel para el siguiente día pero cobran 50.000 la hora ☠️. Así que toca hackear el wifi llamado " ElPassEs:
+            01110010_01101001_01110111_01101001"</h3>
+        <button onclick="hackearWifi()" class="b2">Hackear el wifi 👨🏻‍💻 </button>
+    </section>
+
+    <!--CASO #4-->
+
+    <section class="seccion caso4" >
+        <h3>Felicitaciones! Llegaste a Macondo Pero ocurre otro problema, todos hablan diferente, solo hablan con la la vocal i así que todo lo que dirá es con la vocal “i”pedir el taxi. Convertir: "Taxi me puede llevar al hotel mariposas amarillas"</h3>
+        <button onclick="idioma()">Cambiar de idioma</button>
+    </section>
+
+    <!--CASO #5-->
+
+    <section class="seccion caso5">
+        <h2>cuando llega al hotel, el taxi, le pide que le 300.000 pesos, y el queda sorprendido, asi que empieza a negociar con él, y le dice que, si le gana papel piedra o tijera, le pagara los 300.000,</h2>
+        <button onclick="piedra()">Piedra</button>
+        <button onclick="papel()">Papel</button>
+        <button onclick="tijeras()">Tijera</button>
+    </section>
+
+    </div>
+
+    <script src="macondo.js"></script>
+</body>
+</html>
