@@ -1,0 +1,228 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/*CASO #1*/
+button{
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+#formulario h1{
+    color: rgb(228, 150, 56);
+    text-align: center;
+    margin-top: 30px;
+}
+.saludo{
+    margin-top: 20px;
+    color: rgb(22, 128, 228);
+    width: 380px;
+    margin: 20px auto;
+}
+.saludo input{
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: 10px; 
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    
+}
+.saludo button
+{
+    width: 100px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 130px;
+    color: #fff;
+    background-color: rgb(25, 173, 25);
+    border: rgb(25, 173, 25) solid 1px;
+}
+.saludo button:hover
+{
+    background-color: #fff;
+    color: rgb(25, 173, 25);
+}
+.saludo h2
+{
+    margin-left: 70px;
+    padding-top: 10px;
+}
+.bienvenida
+{
+    display: flex;
+    justify-content: center;
+    color: darkgoldenrod;
+}
+.cuenta
+{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    margin-left: 10px;
+}
+.cantidad
+{
+    color: rgb(25, 173, 25);
+    padding-left: 10px;
+}
+.decision1
+{
+    margin-top: 30px;
+    padding-bottom: 100px;
+    padding: 10px;
+    padding-left: 40px;
+}
+.botones1
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px ;
+    width: 20%;
+    margin: 30px auto;
+}
+.botones1 button
+{
+    width: 200px;
+    height: 50px;
+    margin-right: 40px;
+}
+.b1
+{
+    background-color: rgb(25, 173, 25);
+    border: 1px rgb(25, 173, 25) solid;
+    color: #fff;
+}
+.b1:hover
+{
+    color: rgb(25, 173, 25);
+    background-color: #fff;
+}
+.b2
+{
+    background-color: rgb(196, 28, 28);
+    border: 1px solid rgb(196, 28, 28);
+    color: #fff;
+}
+.b2:hover
+{
+    background-color: #fff;
+    color: rgb(196, 28, 28);
+}
+.display-none{
+    display: none;
+}
+.comida1{
+    float: left;
+    padding-bottom: 100px;
+    margin-left: 500px;
+}
+.comida1 img{
+    width: 350px;
+    height: 300px;
+}
+.comida2{
+    float: right;
+    margin-right: 500px;
+}
+.comida2 img
+{
+    width: 350px;
+    height: 300px;
+}
+
+#lleno
+{
+    width: 350px;
+    height: 302px;
+}
+/*CASO #2*/
+.seccion{
+    width: 1000px;
+    margin: 0 auto;
+}
+.caso2 
+{
+    width: 730px;
+    margin-left: 600px; 
+}
+.caso2 h1 
+{
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.caso2 button
+{
+    margin-left: 265px;
+    width: 130px;
+    height: 40px;
+    background-color: #a37a21;
+    color: #fff;
+    border: 1px solid #a37a21;
+}
+.caso2 button:hover
+{
+    background-color: #fff;
+    color: #a37a21;
+}
+.problema
+{
+    margin-top: 40px;
+}
+.problema label
+{
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+.problema input
+{
+    text-align: center;
+    margin-top: 10px;
+    width: 120px;
+}
+.problema button
+{
+    margin-left: 465px;
+    margin-top: 15px;
+    width: 70px;
+    height: 35px;
+}
+.tabla
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+table
+{
+    width: 500px;
+    height: 120px;
+    text-align: center;
+}
+tr
+{
+    border: 1px solid black;
+}
+td
+{
+    border: 1px solid black;
+}
+.tr1{
+    background-color: #a37a21;
+    color: #fff;
+}
+/*CASO #4*/
+.caso3{
+    margin-top: 25px;
+}
+.caso3 button{
+    margin-left: 440px;
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+}
